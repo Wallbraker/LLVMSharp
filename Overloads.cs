@@ -260,6 +260,12 @@
 
         public static LLVMValueRef BuildAggregateRet(LLVMBuilderRef param0, LLVMValueRef[] RetVals)
         {
+            if (RetVals.Length == 0)
+            {
+                LLVMValueRef dummy;
+                return BuildAggregateRet(param0, out dummy, 0);
+            }
+
             return BuildAggregateRet(param0, out RetVals[0], (uint)RetVals.Length);
         }
 
