@@ -11,7 +11,7 @@ If you're on Windows, consider using the [**LLVMSharp 3.8 NuGet Package**](http:
 On Linux using Mono:
 
 ```bash
- $ git clone http://github.com/mjsabby/LLVMSharp
+ $ git clone http://github.com/Microsoft/LLVMSharp
  $ cd LLVMSharp
  $ chmod +x build.sh
  $ ./build.sh /path/to/libLLVM.so /path/llvm/include
@@ -23,8 +23,8 @@ On Windows using Microsoft.NET:
 
 ```bash
  :> cd c:\path\to\llvm_source\{Release|Debug}\lib
- :> git clone http://github.com/mjsabby/LLVMSharp
- :> powershell ./LLVMSharp/GenLLVMDLL.ps1
+ :> git clone http://github.com/Microsoft/LLVMSharp
+ :> powershell ./LLVMSharp/tools/GenLLVMDLL.ps1
  :> build.bat C:\path\llvm.dll C:\path\to\llvm\include
 ```
 
